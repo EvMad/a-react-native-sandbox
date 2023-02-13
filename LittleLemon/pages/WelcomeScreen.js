@@ -19,7 +19,7 @@ export default function WelcomeScreen() {
       container: {
         flex: 1,
         padding: 40,
-        backgroundColor: '#495E57',
+        backgroundColor: '#333333',
        
       },
       headerText: {
