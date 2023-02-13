@@ -4,7 +4,7 @@ import { Text, View, StyleSheet } from 'react-native';
 export default function LittleLemonHeader() {
     return (
       <View style={styles.container}>
-        <Text style={styles.headerText}  numberOfLines={3}>Little Lemon</Text>
+        <Text style={styles.headerText} numberOfLines={3}>Little Lemon</Text>
         </View>
     );
   }
