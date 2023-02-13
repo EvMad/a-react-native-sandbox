@@ -39,17 +39,14 @@ const Item = ({name}) => {
 
 const MenuItems = () => {
 
-    const renderItem = ({item}) => <Item name={item.name} />
+    const renderItem = ({ item }) => <Item name={item.name} />;
 
     return (
         <View style={menuStyles.container}>
-            <ScrollView 
-            indicatorStyle={'white'}
-              horizontal={false}  
-               style={menuStyles.innerContainer}>
+           
                 <Text style={menuStyles.headerText}>View Menu</Text>
                 <FlatList data={menuItemsToDisplay} renderItem={renderItem}></FlatList>
-            </ScrollView>
+
         </View>
     );
 };
