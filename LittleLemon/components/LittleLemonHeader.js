@@ -3,13 +3,13 @@ import { Text, View, StyleSheet } from 'react-native';
 
 export default function LittleLemonHeader() {
     return (
-      <View style={headerStyles.container}>
-        <Text style={headerStyles.headerText}  numberOfLines={3}>Little Lemon</Text>
+      <View style={styles.container}>
+        <Text style={styles.headerText}  numberOfLines={3}>Little Lemon</Text>
         </View>
     );
   }
 
-  const headerStyles = StyleSheet.create({
+  const styles = StyleSheet.create({
     container: {
         flex: 0.1,
         backgroundColor: '#F4CE14',
