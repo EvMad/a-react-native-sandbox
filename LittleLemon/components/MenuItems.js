@@ -40,7 +40,7 @@ const MenuItems = () => {
               horizontal={false}  
                style={menuStyles.innerContainer}>
                 <Text style={menuStyles.headerText}>View Menu</Text>
-                <Text style={menuStyles.itemText}>{menuItemsToDisplay[0]}</Text>
+                <FlatList data={menuItemsToDisplay} renderItem={renderItem}></FlatList>
             </ScrollView>
         </View>
     );
