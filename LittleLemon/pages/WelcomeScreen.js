@@ -20,6 +20,7 @@ export default function WelcomeScreen() {
         flex: 1,
         padding: 40,
         backgroundColor: '#495E57',
+       
       },
       headerText: {
         fontWeight: 'bold', 
