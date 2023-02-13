@@ -5,7 +5,7 @@ export default function WelcomeScreen() {
     return (
       <View style={{ flex: 1 }}>
         <ScrollView 
-        indicatorStyle={'white'}
+        indicatorStyle={"white"}
               horizontal={false}  
                 style={{
                 padding: 40,
