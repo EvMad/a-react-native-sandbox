@@ -17,7 +17,7 @@ const MenuItems = () => {
               horizontal={false}  
                style={menuStyles.innerContainer}>
                 <Text style={menuStyles.headerText}>View Menu</Text>
-                <Text style={{ fontSize: 24, color: yellow }}>{menuItemsToDisplay[0]}</Text>
+                <Text style={menuStyles.itemText}>{menuItemsToDisplay[0]}</Text>
             </ScrollView>
         </View>
     );
@@ -38,4 +38,8 @@ const menuStyles = StyleSheet.create({
         flexWrap: 'wrap', 
         color: 'white'
     },
+    itemText: {
+        fontSize: 24, 
+        color: yellow 
+    }
 })
