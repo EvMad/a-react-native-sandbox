@@ -51,7 +51,9 @@ const MenuItems = () => {
                 <FlatList 
                 data={menuItemsToDisplay}
                 keyExtractor={(item) => item.id}
-                renderItem={renderItem}></FlatList>
+                renderItem={renderItem}
+                ItemSeparatorComponent={Separator}>
+                </FlatList>
 
         </View>
     );
