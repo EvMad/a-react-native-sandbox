@@ -80,4 +80,8 @@ const menuStyles = StyleSheet.create({
         fontSize: 24, 
         color: yellow,
     },
+    separator: {
+        borderBottomWidth: 1,
+        borderColor: '#EDEFEE',
+    }
 });
