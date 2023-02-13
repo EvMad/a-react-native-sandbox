@@ -14,6 +14,7 @@ const MenuItems = () => {
         <View>
             <ScrollView>
                 <Text>View Menu</Text>
+                <Text>{menuItemsToDisplay[0]}</Text>
             </ScrollView>
         </View>
     );
