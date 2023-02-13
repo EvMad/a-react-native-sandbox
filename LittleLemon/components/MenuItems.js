@@ -10,7 +10,13 @@ const menuItemsToDisplay = [
 ];
 
 const MenuItems = () => {
-    return null;
+    return (
+        <View>
+            <ScrollView>
+                <Text>View Menu</Text>
+            </ScrollView>
+        </View>
+    );
 };
 
 export default MenuItems;
