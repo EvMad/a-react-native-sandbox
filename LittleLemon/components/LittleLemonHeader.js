@@ -3,12 +3,9 @@ import { Text, View, StyleSheet } from 'react-native';
 
 export default function LittleLemonHeader() {
     return (
-      <View style={{ flex: 0.3, backgroundColor: '#F4CE14' }}>
-        <Text style={{ padding: 40, fontSize: 30, color: 'black' }}  numberOfLines={3}>Welcome to
-        <Text style={{ fontWeight: 'bold'}}>Little Lemon</Text>
-        </Text>
-        
-      </View>
+      <View style={headerStyles.container}>
+        <Text style={headerStyles.headerText}  numberOfLines={3}>Little Lemon</Text>
+        </View>
     );
   }
 
