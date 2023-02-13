@@ -12,8 +12,11 @@ const menuItemsToDisplay = [
 const MenuItems = () => {
     return (
         <View style={{ flex: 0.75 }}>
-            <ScrollView>
-                <Text>View Menu</Text>
+            <ScrollView style={{
+                padding: 40,
+                backgroundColor: green,
+            }}>
+                <Text style={{ fontSize: 40, flexWrap: 'wrap', color: 'white' }}>View Menu</Text>
                 <Text>{menuItemsToDisplay[0]}</Text>
             </ScrollView>
         </View>
