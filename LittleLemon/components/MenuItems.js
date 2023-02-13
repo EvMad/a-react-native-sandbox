@@ -12,7 +12,9 @@ const menuItemsToDisplay = [
 const MenuItems = () => {
     return (
         <View style={{ flex: 0.75 }}>
-            <ScrollView style={{
+            <ScrollView 
+              horizontal={true}  
+                style={{
                 padding: 40,
                 backgroundColor: green,
             }}>
