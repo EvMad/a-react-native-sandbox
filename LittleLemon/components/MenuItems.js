@@ -34,8 +34,8 @@ const Item = ({name}) => {
         <View style={menuStyles.container}>
             <Text style={menuStyles.itemText}>{name}</Text>
         </View>
-    )
-}
+    );
+};
 
 const MenuItems = () => {
 
@@ -55,7 +55,8 @@ export default MenuItems;
 
 const menuStyles = StyleSheet.create({
     container: {
-        flex: 0.75
+        flex: 0.75,
+        backgroundColor: '#333333',
     },
     innerContainer: {
     padding: 40,
