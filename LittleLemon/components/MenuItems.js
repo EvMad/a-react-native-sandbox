@@ -29,6 +29,14 @@ const menuItemsToDisplay = [
     { name: "Panna Cotta", id: '20'},
 ];
 
+const Item = ({name}) => {
+    return (
+        <View style={menuStyles.container}>
+            <Text style={menuStyles.itemText}>{name}</Text>
+        </View>
+    )
+}
+
 const MenuItems = () => {
 
     const renderItem = ({item}) => <Item name={item.name} />
