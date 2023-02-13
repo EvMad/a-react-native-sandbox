@@ -41,5 +41,5 @@ const menuStyles = StyleSheet.create({
     itemText: {
         fontSize: 24, 
         color: yellow 
-    }
-})
+    },
+});
