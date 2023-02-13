@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import LittleLemonHeader from "./components/LittleLemonHeader";
 import LittleLemonFooter from "./components/LittleLemonFooter";
+import MenuItems from "./components/MenuItems";
 import WelcomeScreen from "./pages/WelcomeScreen";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
     <>
     <View style={{flex: 1, backgroundColor: '#495E57'}}>
       <LittleLemonHeader />
+      <MenuItems />
       <WelcomeScreen />
     </View>
    
