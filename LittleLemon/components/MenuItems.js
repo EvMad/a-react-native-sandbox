@@ -30,6 +30,9 @@ const menuItemsToDisplay = [
 ];
 
 const MenuItems = () => {
+
+    const renderItem = ({item}) => <Item name={item.name} />
+
     return (
         <View style={menuStyles.container}>
             <ScrollView 
