@@ -29,7 +29,7 @@ const menuItemsToDisplay = [
     { name: "Panna Cotta", price: '$5.00', id: '21U'},
 ];
 
-const Item = ({name}, {price}) => {
+const Item = ({ name, price }) => {
     return (
         <View style={menuStyles.innerContainer}>
             <Text style={menuStyles.itemText}>{name}</Text>
