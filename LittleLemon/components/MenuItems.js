@@ -29,6 +29,8 @@ const menuItemsToDisplay = [
     { name: "Panna Cotta", price: '$5.00', id: '21U'},
 ];
 
+const Separator = () => <View style={menuStyles.separator} />;
+
 const Item = ({ name, price }) => {
     return (
         <View style={menuStyles.innerContainer}>
