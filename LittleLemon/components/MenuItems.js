@@ -6,7 +6,7 @@ const green = '#495E57';
 const yellow = '#F4CE14';
 
 const menuItemsToDisplay = [
-
+    'Hummus \n Moutabal \n Falafel \n Marinated Olive \n Kafta \n Eggplant Salad \n Lentil Burger',
 ];
 
 const MenuItems = () => {
