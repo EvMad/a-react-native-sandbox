@@ -11,7 +11,7 @@ const menuItemsToDisplay = [
 
 const MenuItems = () => {
     return (
-        <View style={{ flex: 0.75 }}>
+        <View style={menuStyles}>
             <ScrollView 
             indicatorStyle={'white'}
               horizontal={false}  
@@ -29,5 +29,7 @@ const MenuItems = () => {
 export default MenuItems;
 
 const menuStyles = StyleSheet.create({
-    
+    container: {
+        flex: 0.75
+    }
 })
