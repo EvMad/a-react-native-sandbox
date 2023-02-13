@@ -9,7 +9,7 @@ export default function WelcomeScreen() {
                 style={styles.container}>
         <Text style={styles.headerText}>Welcome to Little Lemon
         </Text>
-        <Text style={{ fontSize: 24, color: 'white', textAlign: 'center', padding: 20 }}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
+        <Text style={styles.bodyText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
         </ScrollView>
     );
   }
@@ -27,6 +27,11 @@ export default function WelcomeScreen() {
         color: 'white', 
         textAlign: 'center', 
         padding: 40,
-      }
+      },
+      bodyText: {
+        fontSize: 24, 
+        color: 'white', 
+        textAlign: 'center', 
+      },
 
-  })
+  });
