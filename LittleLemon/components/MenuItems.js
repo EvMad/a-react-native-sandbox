@@ -11,7 +11,7 @@ const menuItemsToDisplay = [
 
 const MenuItems = () => {
     return (
-        <View style={menuStyles}>
+        <View style={menuStyles.container}>
             <ScrollView 
             indicatorStyle={'white'}
               horizontal={false}  
