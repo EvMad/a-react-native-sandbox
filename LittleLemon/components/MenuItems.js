@@ -15,10 +15,7 @@ const MenuItems = () => {
             <ScrollView 
             indicatorStyle={'white'}
               horizontal={false}  
-                style={{
-                padding: 40,
-                backgroundColor: green,
-            }}>
+               >
                 <Text style={{ fontSize: 40, flexWrap: 'wrap', color: 'white' }}>View Menu</Text>
                 <Text style={{ fontSize: 24, color: yellow }}>{menuItemsToDisplay[0]}</Text>
             </ScrollView>
@@ -31,5 +28,9 @@ export default MenuItems;
 const menuStyles = StyleSheet.create({
     container: {
         flex: 0.75
-    }
+    },
+innerContainer: {
+    padding: 40,
+    backgroundColor: green
+}
 })
