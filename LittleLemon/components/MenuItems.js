@@ -17,7 +17,7 @@ const MenuItems = () => {
                 backgroundColor: green,
             }}>
                 <Text style={{ fontSize: 40, flexWrap: 'wrap', color: 'white' }}>View Menu</Text>
-                <Text>{menuItemsToDisplay[0]}</Text>
+                <Text style={{ fontSize: 24, color: yellow }}>{menuItemsToDisplay[0]}</Text>
             </ScrollView>
         </View>
     );
