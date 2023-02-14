@@ -85,7 +85,7 @@ const MenuItems = () => {
 
     const renderItem = ({item}) => <Item name={item} />
 
-    const renderSection = ({section: {title}}) => (
+    const renderSectionHeader = ({section: {title}}) => (
         <Text style={menuStyles.sectionHeader}>{title}</Text>
     )
 
