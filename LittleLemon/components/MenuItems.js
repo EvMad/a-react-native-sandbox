@@ -31,6 +31,8 @@ const menuItemsToDisplay = [
 
 const Separator = () => <View style={menuStyles.separator} />;
 
+const Header = () => <Text style={menuStyles.headertext}>View Menu</Text>;
+
 const Item = ({ name, price }) => {
     return (
         <View style={menuStyles.innerContainer}>
