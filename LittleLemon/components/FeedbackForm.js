@@ -3,6 +3,9 @@ import { View, StyleSheet, TextInput, ScrollView, Text } from 'react-native';
 
 export default function FeedbackForm() {
     const [firstName, onChangeFirstName] = React.useState('');
+    const [lastName, onChangeLastName] = React.useState('');
+    const [message, onChangeMessage] = React.useState('');
+
     return (
         <ScrollView style={styles.container}>
             <Text style={styles.headingSection}>
@@ -12,6 +15,8 @@ export default function FeedbackForm() {
                 Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear your experience with us!
             </Text>
             <TextInput value={firstName} onChangeText={onChangeFirstName} style={styles.input} />
+            <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} />
+            <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} />
         </ScrollView>
     )
 };
