@@ -96,7 +96,9 @@ const MenuItems = () => {
     const renderItem = ({ item }) => <Item name={item.name} price={item.price}/>;
 
     const renderSectionHeader = ({section: {title}}) => (
+        <View style={menuStyles.headerStyle}>
         <Text style={menuStyles.sectionHeader}>{title}</Text>
+        </View>
     )
 
     return (
