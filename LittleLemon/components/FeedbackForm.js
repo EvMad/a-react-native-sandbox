@@ -1,8 +1,14 @@
 import * as React from 'react';
-import { View, StyleSheet, TextInput } from 'react-native';
+import { View, StyleSheet, TextInput, ScrollView, Text } from 'react-native';
 
 export default function FeedbackForm() {
-    return null;
+    return (
+        <ScrollView>
+            <Text>
+                How was your visit to Little Lemon?
+            </Text>
+        </ScrollView>
+    )
 };
 
 const styles =StyleSheet.create({
