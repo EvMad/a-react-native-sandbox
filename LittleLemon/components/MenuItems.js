@@ -58,7 +58,8 @@ const MenuItems = () => {
                 keyExtractor={(item) => item.id}
                 renderItem={renderItem}
                 ItemSeparatorComponent={Separator}
-                ListHeaderComponent={Header}>
+                ListHeaderComponent={Header}
+                ListFooterComponent={Footer}>
                 </FlatList>
 
         </View>
