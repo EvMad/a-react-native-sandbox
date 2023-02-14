@@ -85,6 +85,11 @@ const menuStyles = StyleSheet.create({
         flexWrap: 'wrap', 
         color: 'white'
     },
+    footerText: {
+        fontSize: 20, 
+        flexWrap: 'wrap', 
+        color: 'white'
+    },
     itemText: {
         fontSize: 24, 
         color: yellow,
