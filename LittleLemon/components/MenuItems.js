@@ -94,7 +94,9 @@ const MenuItems = () => {
             <SectionList 
             sections={menuItemsToDisplay} 
             renderItem={renderItem}
-            renderSectionHeader={renderSectionHeader}/>
+            renderSectionHeader={renderSectionHeader}
+            ItemSeparatorComponent={Separator}
+            ListFooterComponent={Footer}/>
         </View>
     );
 
@@ -134,6 +136,12 @@ const menuStyles = StyleSheet.create({
         fontSize: 40, 
         flexWrap: 'wrap', 
         color: 'white'
+    },
+    sectionHeader: {
+        fontSize: 40, 
+        flexWrap: 'wrap', 
+        color: yellow,
+        textAlign: 'center',
     },
     footerText: {
         fontSize: 20, 
