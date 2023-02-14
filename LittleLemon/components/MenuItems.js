@@ -147,7 +147,8 @@ const menuStyles = StyleSheet.create({
     footerText: {
         fontSize: 20, 
         flexWrap: 'wrap', 
-        color: 'white'
+        textAlign: 'center',
+        color: 'white',
     },
     itemText: {
         fontSize: 24, 
