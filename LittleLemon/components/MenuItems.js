@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text, ScrollView, StyleSheet, FlatList } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, FlatList, SectionList } from 'react-native';
 
 const green = '#495E57';
 const yellow = '#F4CE14';
@@ -83,22 +83,28 @@ const Item = ({ name, price }) => {
 
 const MenuItems = () => {
 
-    const renderItem = ({ item }) => <Item name={item.name} price={item.price} />;
-
     return (
         <View style={menuStyles.container}>
-           
-                <FlatList 
-                data={menuItemsToDisplay}
-                keyExtractor={(item) => item.id}
-                renderItem={renderItem}
-                ItemSeparatorComponent={Separator}
-                ListHeaderComponent={Header}
-                ListFooterComponent={Footer}>
-                </FlatList>
-
+            <SectionList></SectionList>
         </View>
     );
+
+    // const renderItem = ({ item }) => <Item name={item.name} price={item.price} />;
+
+    // return (
+    //     <View style={menuStyles.container}>
+           
+    //             <FlatList 
+    //             data={menuItemsToDisplay}
+    //             keyExtractor={(item) => item.id}
+    //             renderItem={renderItem}
+    //             ItemSeparatorComponent={Separator}
+    //             ListHeaderComponent={Header}
+    //             ListFooterComponent={Footer}>
+    //             </FlatList>
+
+    //     </View>
+    // );
 };
 
 export default MenuItems;
