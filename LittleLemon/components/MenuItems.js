@@ -82,18 +82,18 @@ const Footer = () => <Text style={menuStyles.footerText}>
     All Rights Reserved by Little Lemon 2023
 </Text>
 
-const Item = ({ name }) => {
+const Item = ({ name, price }) => {
     return (
         <View style={menuStyles.innerContainer}>
             <Text style={menuStyles.itemText}>{name}</Text>
-            {/* <Text style={menuStyles.itemText}>{price}</Text> */}
+            <Text style={menuStyles.itemText}>{price}</Text>
         </View>
     );
 };
 
 const MenuItems = () => {
 
-    const renderItem = ({item}) => <Item name={item} />
+    const renderItem = ({ item }) => <Item name={item.name} price={item.price}/>;
 
     const renderSectionHeader = ({section: {title}}) => (
         <Text style={menuStyles.sectionHeader}>{title}</Text>
