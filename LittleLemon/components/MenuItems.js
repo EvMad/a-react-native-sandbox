@@ -33,6 +33,10 @@ const Separator = () => <View style={menuStyles.separator} />;
 
 const Header = () => <Text style={menuStyles.headerText}>View Menu</Text>;
 
+const Footer = () => <Text style={menuStyles.footerText}>
+    All Rights Reserved by Little Lemon 2023
+</Text>
+
 const Item = ({ name, price }) => {
     return (
         <View style={menuStyles.innerContainer}>
