@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, StyleSheet, TextInput, ScrollView, Text } from 'react-native';
 
-export default function FeedbackForm() {
+const FeedbackForm = () => {
     const [firstName, onChangeFirstName] = React.useState('');
     const [lastName, onChangeLastName] = React.useState('');
     const [message, onChangeMessage] = React.useState('');
@@ -49,5 +49,16 @@ const styles =StyleSheet.create({
         marginVertical: 8,
         color: '#EDEFEE',
         textAlign: 'center',
+        backgroundColor: '#495E57',
     },
-})
+    headingSection: {
+        fontSize: 28,
+        padding: 20,
+        marginVertical: 8,
+        color: '#EDEFEE',
+        textAlign: 'center',
+        backgroundColor: '#495E57',
+    },
+});
+
+export default FeedbackForm;
