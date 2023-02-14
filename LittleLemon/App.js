@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import LittleLemonHeader from "./components/LittleLemonHeader";
 import LittleLemonFooter from "./components/LittleLemonFooter";
 import MenuItems from "./components/MenuItems";
+import FeedbackForm from "./components/FeedbackForm";
 import WelcomeScreen from "./pages/WelcomeScreen";
 
 export default function App() {
