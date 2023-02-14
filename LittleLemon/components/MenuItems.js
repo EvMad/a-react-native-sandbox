@@ -49,12 +49,12 @@ const MenuItems = () => {
     return (
         <View style={menuStyles.container}>
            
-                <Text style={menuStyles.headerText}>View Menu</Text>
                 <FlatList 
                 data={menuItemsToDisplay}
                 keyExtractor={(item) => item.id}
                 renderItem={renderItem}
-                ItemSeparatorComponent={Separator}>
+                ItemSeparatorComponent={Separator}
+                ListHeaderComponent={Header}>
                 </FlatList>
 
         </View>
