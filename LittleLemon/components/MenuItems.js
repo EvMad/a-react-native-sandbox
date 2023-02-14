@@ -85,7 +85,7 @@ const MenuItems = () => {
 
     return (
         <View style={menuStyles.container}>
-            <SectionList></SectionList>
+            <SectionList sections={menuItemsToDisplay}/>
         </View>
     );
 
