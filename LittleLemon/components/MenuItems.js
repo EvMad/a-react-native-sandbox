@@ -85,9 +85,16 @@ const MenuItems = () => {
 
     const renderItem = ({item}) => <Item name={item} />
 
+    const renderSection = ({section: {title}}) => (
+        <Text style={menuStyles.sectionHeader}>{title}</Text>
+    )
+
     return (
         <View style={menuStyles.container}>
-            <SectionList sections={menuItemsToDisplay} renderItem={renderItem}/>
+            <SectionList 
+            sections={menuItemsToDisplay} 
+            renderItem={renderItem}
+            renderSectionHeader={renderSectionHeader}/>
         </View>
     );
 
