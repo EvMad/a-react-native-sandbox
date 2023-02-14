@@ -105,6 +105,7 @@ const MenuItems = () => {
         <View style={menuStyles.container}>
             <SectionList 
             sections={menuItemsToDisplay} 
+            keyExtractor={(item,index) => item + index}
             renderItem={renderItem}
             renderSectionHeader={renderSectionHeader}
             ItemSeparatorComponent={Separator}
