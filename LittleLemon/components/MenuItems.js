@@ -135,7 +135,8 @@ const menuStyles = StyleSheet.create({
     headerText: {
         fontSize: 40, 
         flexWrap: 'wrap', 
-        color: 'white'
+        color: 'black',
+        backgroundColor: yellow,
     },
     sectionHeader: {
         fontSize: 40, 
