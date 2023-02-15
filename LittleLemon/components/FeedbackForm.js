@@ -4,6 +4,7 @@ import { View, StyleSheet, TextInput, ScrollView, Text, KeyboardAvoidingView, Pl
 const FeedbackForm = () => {
     const [firstName, onChangeFirstName] = React.useState('');
     const [lastName, onChangeLastName] = React.useState('');
+    const [phoneNumber, onChangePhoneNumber] = React.useState('');
     const [message, onChangeMessage] = React.useState('');
 
     return (
@@ -17,6 +18,7 @@ const FeedbackForm = () => {
             </Text>
             <TextInput value={firstName} onChangeText={onChangeFirstName} style={styles.input} placeholder={'First Name'} />
             <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} placeholder={'Last Name'} />
+            <TextInput value={phoneNumber} onChangeText={onChangePhoneNumber} style={styles.input} keyboardType={"phone-pad"} placeholder={'Phone Number'} />
             <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} multiline={true} maxLength={250} placeholder={'Type your message here...'} />
         </ScrollView>
    </KeyboardAvoidingView>
