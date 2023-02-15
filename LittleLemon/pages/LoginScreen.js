@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, Platform, Pressable } from 'react-native';
 
 
@@ -13,9 +14,13 @@ const LoginScreen = () => {
             <Text style={styles.regularText}>Login to continue </Text>
             <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} keyboardType={'email-address'} placeholder="email" />
             <TextInput value={password} onChangeText={onChangePassword} style={styles.input} secureTextEntry={true} maxLength={25} keyboardType={'default'} placeholder="password" />
-        <Pressable style={menuStyles.button} onPress={() => {setShowButton(!showButton)}}>
-        <Text style={menuStyles.buttonText}>Login</Text>
-        </Pressable>
+        {!showButton && (
+        <Pressable style={styles.button} onPress={() => {setShowButton(showButton)}}>
+        <Text style={styles.buttonText}>Login</Text>
+        </Pressable>)}
+        {showButton && (
+          <Text style={styles.infoSection}>You are logged in!</Text>
+        )}
         </ScrollView>
     </KeyboardAvoidingView>
     );
@@ -71,6 +76,6 @@ const LoginScreen = () => {
       backgroundColor: '#495E57',
   },
 });
-  });
+  
 
   export default LoginScreen;
