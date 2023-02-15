@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, TextInput, ScrollView, Text } from 'react-native';
+import { View, StyleSheet, TextInput, ScrollView, Text, KeyboardAvoidingView } from 'react-native';
 
 const FeedbackForm = () => {
     const [firstName, onChangeFirstName] = React.useState('');
@@ -7,7 +7,8 @@ const FeedbackForm = () => {
     const [message, onChangeMessage] = React.useState('');
 
     return (
-        <ScrollView style={styles.container} keyboardDismissMode="on-drag">
+   <KeyboardAvoidingView>
+         <ScrollView style={styles.container} keyboardDismissMode="on-drag">
             <Text style={styles.headingSection}>
                 How was your visit to Little Lemon?
             </Text>
@@ -18,6 +19,7 @@ const FeedbackForm = () => {
             <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} />
             <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} />
         </ScrollView>
+   </KeyboardAvoidingView>
     )
 };
 
