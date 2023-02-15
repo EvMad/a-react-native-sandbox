@@ -15,9 +15,9 @@ const FeedbackForm = () => {
             <Text style={styles.infoSection}>
                 Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear your experience with us!
             </Text>
-            <TextInput value={firstName} onChangeText={onChangeFirstName} style={styles.input} />
-            <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} />
-            <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} />
+            <TextInput value={firstName} onChangeText={onChangeFirstName} style={styles.input} placeholder={'First Name'} />
+            <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} placeholder={'Last Name'} />
+            <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} placeholder={'Type your message here...'} />
         </ScrollView>
    </KeyboardAvoidingView>
     )
