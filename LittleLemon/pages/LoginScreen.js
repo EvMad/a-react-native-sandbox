@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollView, Text, StyleSheet, KeyboardAvoidingView } from 'react-native';
+import { ScrollView, Text, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
 
 
 const LoginScreen = () => {
@@ -11,7 +11,7 @@ const LoginScreen = () => {
             <Text style={styles.headerText}>Welcome to Little Lemon</Text>
             <Text style={styles.regularText}>Login to continue </Text>
             <TextInput value={userName} onChangeText={onChangeUserName} style={styles.input} placeholder="username" />
-            <TextInput value={password} onChangeText={onChangePassword} style={styles.input} placeholder="password" />
+            <TextInput value={password} onChangeText={onChangePassword} style={styles.input} secureTextEntry={true} maxLength={25} placeholder="password" />
         </ScrollView>
     </KeyboardAvoidingView>
     );
