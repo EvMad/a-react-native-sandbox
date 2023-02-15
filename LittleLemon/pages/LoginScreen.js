@@ -3,14 +3,14 @@ import { ScrollView, Text, StyleSheet, KeyboardAvoidingView, Platform } from 're
 
 
 const LoginScreen = () => {
-    const [userName, onChangeUserName] = React.useState('');
+    const [email, onChangeEmail] = React.useState('');
     const [password, onChangePassword] = React.useState('');
     return (
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <ScrollView>
             <Text style={styles.headerText}>Welcome to Little Lemon</Text>
             <Text style={styles.regularText}>Login to continue </Text>
-            <TextInput value={userName} onChangeText={onChangeUserName} style={styles.input} placeholder="username" />
+            <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} placeholder="username" />
             <TextInput value={password} onChangeText={onChangePassword} style={styles.input} secureTextEntry={true} maxLength={25} placeholder="password" />
         </ScrollView>
     </KeyboardAvoidingView>
