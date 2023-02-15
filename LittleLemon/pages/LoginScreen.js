@@ -10,7 +10,7 @@ const LoginScreen = () => {
         <ScrollView>
             <Text style={styles.headerText}>Welcome to Little Lemon</Text>
             <Text style={styles.regularText}>Login to continue </Text>
-            <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} placeholder="username" />
+            <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} keyboardType={'email-address'} placeholder="email" />
             <TextInput value={password} onChangeText={onChangePassword} style={styles.input} secureTextEntry={true} maxLength={25} placeholder="password" />
         </ScrollView>
     </KeyboardAvoidingView>
