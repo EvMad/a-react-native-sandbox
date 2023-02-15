@@ -107,13 +107,15 @@ const MenuItems = () => {
             <Pressable style={menuStyles.button} onPress={() => {setShowMenu(!showMenu)}}>
                 <Text style={menuStyles.buttonText}>{showMenu ? 'Home' : 'View Menu'}</Text>
             </Pressable>
-            <SectionList 
+           {showMenu && ( 
+           <SectionList 
             sections={menuItemsToDisplay} 
             keyExtractor={(item,index) => item + index}
             renderItem={renderItem}
             renderSectionHeader={renderSectionHeader}
             ItemSeparatorComponent={Separator}
             ListFooterComponent={Footer}/>
+            )}
         </View>
     );
 
