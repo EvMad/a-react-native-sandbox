@@ -7,7 +7,7 @@ const FeedbackForm = () => {
     const [message, onChangeMessage] = React.useState('');
 
     return (
-   <KeyboardAvoidingView>
+   <KeyboardAvoidingView style={styles.container}>
          <ScrollView style={styles.container} keyboardDismissMode="on-drag">
             <Text style={styles.headingSection}>
                 How was your visit to Little Lemon?
