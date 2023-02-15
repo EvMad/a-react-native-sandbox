@@ -11,13 +11,17 @@ const LoginScreen = () => {
     <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <ScrollView>
             <Text style={styles.headerText}>Welcome to Little Lemon</Text>
-            <Text style={styles.regularText}>Login to continue </Text>
+            
+        {!showButton && (
+          <>
+          <Text style={styles.regularText}>Login to continue </Text>
             <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} keyboardType={'email-address'} placeholder="email" />
             <TextInput value={password} onChangeText={onChangePassword} style={styles.input} secureTextEntry={true} maxLength={25} keyboardType={'default'} placeholder="password" />
-        {!showButton && (
-        <Pressable style={styles.button} onPress={() => {setShowButton(!showButton)}}>
+          <Pressable style={styles.button} onPress={() => {setShowButton(!showButton)}}>
         <Text style={styles.buttonText}>Login</Text>
-        </Pressable>)}
+        </Pressable>
+          </>        
+        )}
         {showButton && (
           <Text style={styles.infoSection}>You are logged in!</Text>
         )}
