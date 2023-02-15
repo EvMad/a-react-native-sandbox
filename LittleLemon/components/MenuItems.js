@@ -198,5 +198,6 @@ const menuStyles = StyleSheet.create({
         marginVertical: 8,
         color: '#EDEFEE',
         textAlign: 'center',
+        backgroundColor: '#495E57',
     },
 });

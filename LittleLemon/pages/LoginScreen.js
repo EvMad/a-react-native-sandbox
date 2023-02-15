@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
+import { ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, Platform, Pressable } from 'react-native';
 
 
 const LoginScreen = () => {
+  const [showButton, setShowButton] = useState(false);
     const [email, onChangeEmail] = React.useState('');
     const [password, onChangePassword] = React.useState('');
     return (
@@ -12,6 +13,9 @@ const LoginScreen = () => {
             <Text style={styles.regularText}>Login to continue </Text>
             <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} keyboardType={'email-address'} placeholder="email" />
             <TextInput value={password} onChangeText={onChangePassword} style={styles.input} secureTextEntry={true} maxLength={25} keyboardType={'default'} placeholder="password" />
+        <Pressable style={menuStyles.button} onPress={() => {setShowButton(!showButton)}}>
+        <Text style={menuStyles.buttonText}>Login</Text>
+        </Pressable>
         </ScrollView>
     </KeyboardAvoidingView>
     );
@@ -43,6 +47,30 @@ const LoginScreen = () => {
         borderColor: '#EDEFEE',
         backgroundColor: '#F4CE14',
     },
+    button: {
+      fontSize: 22,
+      padding: 10,
+      marginVertical: 8,
+      margin: 40,
+      backgroundColor: '#EDEFEE',
+      borderColor: '#EDEFEE',
+      borderWidth: 2,
+      borderRadius: 12,
+  },
+  buttonText: {
+      color: '#333333',
+      textAlign: 'center',
+      fontSize: 32,
+  },
+  infoSection: {
+      fontSize: 24,
+      padding: 20,
+      marginVertical: 8,
+      color: '#EDEFEE',
+      textAlign: 'center',
+      backgroundColor: '#495E57',
+  },
+});
   });
 
   export default LoginScreen;
