@@ -16,10 +16,10 @@ const FeedbackForm = () => {
             <Text style={styles.infoSection}>
                 Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear your experience with us!
             </Text>
-            <TextInput value={firstName} onChangeText={onChangeFirstName} style={styles.input} placeholder={'First Name'} />
-            <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} placeholder={'Last Name'} />
-            <TextInput value={phoneNumber} onChangeText={onChangePhoneNumber} style={styles.input} keyboardType={"phone-pad"} placeholder={'Phone Number'} />
-            <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} multiline={true} maxLength={250} placeholder={'Type your message here...'} />
+            <TextInput value={firstName} onChangeText={onChangeFirstName} style={styles.input} placeholder="first name" />
+            <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} placeholder="last name" />
+            <TextInput value={phoneNumber} onChangeText={onChangePhoneNumber} style={styles.input} keyboardType={"phone-pad"} placeholder="phone number" />
+            <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} multiline={true} maxLength={250} placeholder="Type your message here..." />
         </ScrollView>
    </KeyboardAvoidingView>
     )
