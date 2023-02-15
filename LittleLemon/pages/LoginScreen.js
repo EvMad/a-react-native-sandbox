@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollView, Text, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
+import { ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
 
 
 const LoginScreen = () => {
