@@ -92,7 +92,7 @@ const Item = ({ name, price }) => {
 };
 
 const MenuItems = () => {
-
+    const [showMenu, setShowMenu] = useState(false);
     const renderItem = ({ item }) => <Item name={item.name} price={item.price}/>;
 
     const renderSectionHeader = ({section: {title}}) => (
@@ -104,7 +104,9 @@ const MenuItems = () => {
     return (
         <View style={menuStyles.container}>
             <Text style={menuStyles.itemText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
-            <Pressable style={menuStyles.button} />
+            <Pressable style={menuStyles.button} onPress={() => {}}>
+                <Text style={menuStyles.buttonText}>View Menu</Text>
+            </Pressable>
             <SectionList 
             sections={menuItemsToDisplay} 
             keyExtractor={(item,index) => item + index}
