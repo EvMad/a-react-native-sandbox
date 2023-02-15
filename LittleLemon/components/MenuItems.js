@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text, ScrollView, StyleSheet, FlatList, SectionList } from 'react-native';
+import { View, Text, ScrollView, StyleSheet, FlatList, SectionList, Pressable } from 'react-native';
 
 const green = '#495E57';
 const yellow = '#F4CE14';
@@ -103,6 +103,7 @@ const MenuItems = () => {
 
     return (
         <View style={menuStyles.container}>
+            <Text style={menuStyles.itemText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
             <SectionList 
             sections={menuItemsToDisplay} 
             keyExtractor={(item,index) => item + index}
