@@ -15,7 +15,7 @@ const LoginScreen = () => {
             <TextInput value={email} onChangeText={onChangeEmail} style={styles.input} keyboardType={'email-address'} placeholder="email" />
             <TextInput value={password} onChangeText={onChangePassword} style={styles.input} secureTextEntry={true} maxLength={25} keyboardType={'default'} placeholder="password" />
         {!showButton && (
-        <Pressable style={styles.button} onPress={() => {setShowButton(showButton)}}>
+        <Pressable style={styles.button} onPress={() => {setShowButton(!showButton)}}>
         <Text style={styles.buttonText}>Login</Text>
         </Pressable>)}
         {showButton && (
