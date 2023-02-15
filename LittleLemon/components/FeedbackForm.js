@@ -17,7 +17,7 @@ const FeedbackForm = () => {
             </Text>
             <TextInput value={firstName} onChangeText={onChangeFirstName} style={styles.input} placeholder={'First Name'} />
             <TextInput value={lastName} onChangeText={onChangeLastName} style={styles.input} placeholder={'Last Name'} />
-            <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} placeholder={'Type your message here...'} />
+            <TextInput value={message} onChangeText={onChangeMessage} style={styles.input} multiline={true} maxLength={250} placeholder={'Type your message here...'} />
         </ScrollView>
    </KeyboardAvoidingView>
     )
