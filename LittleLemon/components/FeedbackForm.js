@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, StyleSheet, TextInput, ScrollView, Text, KeyboardAvoidingView } from 'react-native';
+import { View, StyleSheet, TextInput, ScrollView, Text, KeyboardAvoidingView, Platform } from 'react-native';
 
 const FeedbackForm = () => {
     const [firstName, onChangeFirstName] = React.useState('');
@@ -8,7 +8,7 @@ const FeedbackForm = () => {
 
     return (
    <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-         <ScrollView style={styles.container} keyboardDismissMode="on-drag">
+         <ScrollView keyboardDismissMode="on-drag">
             <Text style={styles.headingSection}>
                 How was your visit to Little Lemon?
             </Text>
@@ -23,7 +23,7 @@ const FeedbackForm = () => {
     )
 };
 
-const styles =StyleSheet.create({
+const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#495E57'
