@@ -104,7 +104,7 @@ const MenuItems = () => {
     return (
         <View style={menuStyles.container}>
             <Text style={menuStyles.itemText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
-            <Pressable style={menuStyles.button} onPress={() => {}}>
+            <Pressable style={menuStyles.button} onPress={() => {setShowMenu(!showMenu)}}>
                 <Text style={menuStyles.buttonText}>View Menu</Text>
             </Pressable>
             <SectionList 
