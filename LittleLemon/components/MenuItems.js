@@ -103,7 +103,7 @@ const MenuItems = () => {
 
     return (
         <View style={menuStyles.container}>
-            <Text style={menuStyles.itemText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
+            {!showMenu && (<Text style={menuStyles.infoSection}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>)}
             <Pressable style={menuStyles.button} onPress={() => {setShowMenu(!showMenu)}}>
                 <Text style={menuStyles.buttonText}>{showMenu ? 'Home' : 'View Menu'}</Text>
             </Pressable>
@@ -176,5 +176,26 @@ const menuStyles = StyleSheet.create({
     separator: {
         borderBottomWidth: 1,
         borderColor: '#EDEFEE',
-    }
+    },
+    button: {
+        fontSize: 22,
+        padding: 10,
+        marginVertical: 8,
+        margin: 40,
+        backgroundColor: '#EDEFEE',
+        borderColor: '#EDEFEE',
+        borderWidth: 2,
+        borderRadius: 12,
+    },
+    buttonText: {
+        color: '#333333',
+        textAlign: 'center',
+        fontSize: 32,
+    },
+    infoSection: {
+        fontSize: 24,
+        padding: 20,
+        marginVertical: 8,
+        color: '#EDEFEE',
+    },
 });
