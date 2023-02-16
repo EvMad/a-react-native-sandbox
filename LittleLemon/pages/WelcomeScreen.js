@@ -7,7 +7,7 @@ export default function WelcomeScreen() {
         indicatorStyle={"white"}
               horizontal={false}  
                 style={styles.container}>
-                  <Image source={require("")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
+                  <Image source={require("../img/LittleLemonLogo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
         <Text style={styles.headerText}>Welcome to Little Lemon
         </Text>
         <Text style={styles.bodyText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
