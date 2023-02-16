@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Text, View, ScrollView, StyleSheet, Image, useColorScheme } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, Image, useColorScheme, useWindowDimensions } from 'react-native';
 
 export default function WelcomeScreen() {
+  const {width, height, fontScale} = useWindowDimensions();
   const colorScheme = useColorScheme();
     return (
         <ScrollView 
