@@ -8,13 +8,13 @@ export default function WelcomeScreen() {
         <ScrollView 
         indicatorStyle={"white"}
               horizontal={false}  
-                style={styles.container}>
+                style={[styles.container, colorScheme === 'light' ? {backgroundColor: '#fff'} : {backgroundColor: '#333333'}]}>
                  <View style={styles.headerWrapper}>
                  <Image source={require("../img/LittleLemonLogo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
-        <Text style={styles.headerText}>Little Lemon
+        <Text style={[styles.headerText, colorScheme === 'light' ? {color: 'black'} : {color: 'white'}]}>Little Lemon
         </Text>
                  </View>
-        <Text style={styles.bodyText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
+        <Text style={[styles.bodyText, colorScheme === 'light' ? {color: 'black'} : {color: 'white'}]}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
        
         </ScrollView>
     );
@@ -43,8 +43,7 @@ export default function WelcomeScreen() {
       },
       headerText: {
         fontWeight: 'bold', 
-        fontSize: 30, 
-        color: 'white', 
+        fontSize: 30,        
         textAlign: 'center', 
         paddingRight: 10,
         paddingLeft: 20,
@@ -53,7 +52,6 @@ export default function WelcomeScreen() {
       },
       bodyText: {
         fontSize: 24, 
-        color: 'white', 
         textAlign: 'center', 
       },
 
