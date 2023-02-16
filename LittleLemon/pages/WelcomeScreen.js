@@ -7,9 +7,11 @@ export default function WelcomeScreen() {
         indicatorStyle={"white"}
               horizontal={false}  
                 style={styles.container}>
-                  <Image source={require("../img/LittleLemonLogo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
-        <Text style={styles.headerText}>Welcome to Little Lemon
+                 <View style={styles.headerWrapper}>
+                 <Image source={require("../img/LittleLemonLogo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
+        <Text style={styles.headerText}>Little Lemon
         </Text>
+                 </View>
         <Text style={styles.bodyText}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
         </ScrollView>
     );
@@ -19,13 +21,18 @@ export default function WelcomeScreen() {
 
       container: {
         flex: 1,
-        padding: 40,
         backgroundColor: '#333333',
        
       },
       logo: {
         height: 100,
-        width: 300,
+        width: 100,
+        borderRadius: 20,
+      },
+      headerWrapper: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        margin: 10,
       },
       image: {
         width: 350,
@@ -38,7 +45,10 @@ export default function WelcomeScreen() {
         fontSize: 30, 
         color: 'white', 
         textAlign: 'center', 
-        padding: 40,
+        paddingRight: 10,
+        paddingLeft: 20,
+        paddingTop: 30,
+        paddingBottom: 10,
       },
       bodyText: {
         fontSize: 24, 
