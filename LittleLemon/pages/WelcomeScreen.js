@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Text, View, ScrollView, StyleSheet, Image } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, Image, useColorScheme } from 'react-native';
 
 export default function WelcomeScreen() {
+  const colorScheme = useColorScheme();
     return (
         <ScrollView 
         indicatorStyle={"white"}
