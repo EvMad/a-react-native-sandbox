@@ -27,6 +27,12 @@ export default function WelcomeScreen() {
         height: 100,
         width: 300,
       },
+      image: {
+        width: 350,
+        height: 250,
+        borderRadius: 10,
+        borderWidth: 10,
+      },
       headerText: {
         fontWeight: 'bold', 
         fontSize: 30, 
