@@ -7,7 +7,7 @@ export default function WelcomeScreen() {
         <ScrollView 
         indicatorStyle={"white"}
               horizontal={false}  
-                style={styles.container}>
+                style={[styles.container, colorScheme === 'light' ? {backgroundColor: '#fff'} : {backgroundColor: '#333333'}]}>
                  <View style={styles.headerWrapper}>
                  <Image source={require("../img/LittleLemonLogo.png")} resizeMode="contain" style={styles.logo} accessible={true} accessibilityLabel="Little Lemon Logo" />
         <Text style={styles.headerText}>Little Lemon
@@ -21,9 +21,7 @@ export default function WelcomeScreen() {
   const styles = StyleSheet.create({
 
       container: {
-        flex: 1,
-        backgroundColor: '#333333',
-       
+        flex: 1,       
       },
       logo: {
         height: 100,
