@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, ScrollView, StyleSheet, Image, useColorScheme, useWindowDimensions } from 'react-native';
+import { Text, View, ScrollView, StyleSheet, Image, useColorScheme, useWindowDimensions, Pressable } from 'react-native';
 
 const WelcomeScreen = ({navigation}) => {
   const {width, height, fontScale} = useWindowDimensions();
@@ -15,7 +15,7 @@ const WelcomeScreen = ({navigation}) => {
         </Text>
                  </View>
         <Text style={[styles.bodyText, colorScheme === 'light' ? {color: 'black'} : {color: 'white'}]}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
-       
+       <Pressable><Text style={styles.buttonText}>View Menu</Text></Pressable>
         </ScrollView>
     );
   }
@@ -54,6 +54,21 @@ const WelcomeScreen = ({navigation}) => {
         fontSize: 24, 
         textAlign: 'center', 
       },
+      button: {
+        fontSize: 22,
+        padding: 10,
+        marginVertical: 8,
+        margin: 40,
+        backgroundColor: '#EDEFEE',
+        borderColor: '#EDEFEE',
+        borderWidth: 2,
+        borderRadius: 12,
+    },
+    buttonText: {
+        color: '#333333',
+        textAlign: 'center',
+        fontSize: 32,
+    },
 
   });
 
