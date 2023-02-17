@@ -18,10 +18,11 @@ export default function App() {
  <Stack.Navigator>
  <View style={styles.container}>
       <LittleLemonHeader />
-      <WelcomeScreen />
-      {/* <MenuItems /> */}
-      {/* <FeedbackForm /> */}
-      {/* <LoginScreen /> */}
+      <Stack.Screen name="Welcome" component={WelcomeScreen} />
+      <Stack.Screen name="Menu" component={MenuItems} />
+      <Stack.Screen name="Feedback" component={FeedbackForm} />
+      <Stack.Screen name="Login" component={LoginScreen} />
+      
       
     </View>
    
