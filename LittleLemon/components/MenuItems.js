@@ -91,7 +91,7 @@ const Item = ({ name, price }) => {
     );
 };
 
-const MenuItems = () => {
+const MenuItems = (navigation) => {
     const [showMenu, setShowMenu] = useState(false);
     const renderItem = ({ item }) => <Item name={item.name} price={item.price}/>;
 
@@ -116,6 +116,9 @@ const MenuItems = () => {
             ItemSeparatorComponent={Separator}
             ListFooterComponent={Footer}/>
             )}
+            <Pressable style={menuStyles.button} onPress={() => navigation.goBack()}>
+                <Text style={menuStyles.buttonText}>Go Back</Text>
+            </Pressable>
         </View>
     );
 
