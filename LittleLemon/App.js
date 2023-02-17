@@ -29,7 +29,7 @@ export default function App() {
  <Stack.Navigator initialRouteName="Welcome" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold', }, }}>
  {/* <View style={styles.container}> */}
      
-      <Stack.Screen name="Welcome" options={{ title: 'Home' }} component={WelcomeScreen} />
+      <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ title: 'Home', headerTitle: (props) => <LogoTitle {...props} />,}} />
       <Stack.Screen name="Menu" component={MenuItems} />
       <Stack.Screen name="Feedback" component={FeedbackForm} />
       <Stack.Screen name="Login" component={LoginScreen} />
