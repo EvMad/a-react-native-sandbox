@@ -15,7 +15,8 @@ export default function App() {
   return (
     <>
   <NavigationContainer>
-  <View style={styles.container}>
+ <Stack.Navigator>
+ <View style={styles.container}>
       <LittleLemonHeader />
       <WelcomeScreen />
       {/* <MenuItems /> */}
@@ -27,6 +28,7 @@ export default function App() {
     <View style={styles.footer}>
      <LittleLemonFooter />
    </View>
+ </Stack.Navigator>
   </NavigationContainer>
     </>
   );
