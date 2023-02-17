@@ -15,7 +15,9 @@ const WelcomeScreen = ({navigation}) => {
         </Text>
                  </View>
         <Text style={[styles.bodyText, colorScheme === 'light' ? {color: 'black'} : {color: 'white'}]}>Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. We would love to hear more about your experience with us!</Text>
-       <Pressable><Text style={styles.buttonText}>View Menu</Text></Pressable>
+       <Pressable onPress={() => navigation.navigate("Menu")}>
+        <Text style={styles.buttonText}>View Menu</Text>
+        </Pressable>
         </ScrollView>
     );
   }
