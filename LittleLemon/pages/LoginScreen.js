@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ScrollView, Text, TextInput, StyleSheet, KeyboardAvoidingView, Platform, Pressable } from 'react-native';
 
 
-const LoginScreen = () => {
+const LoginScreen = (navigation) => {
   const [showButton, setShowButton] = useState(false);
     const [email, onChangeEmail] = React.useState('');
     const [password, onChangePassword] = React.useState('');
@@ -23,7 +23,12 @@ const LoginScreen = () => {
           </>        
         )}
         {showButton && (
+          <>
           <Text style={styles.infoSection}>You are logged in!</Text>
+          <Pressable onPress={() => navigation.navigate("Welcome")}>
+        <Text style={styles.buttonText}>Proceed to Home</Text>
+        </Pressable>
+          </>
         )}
         </ScrollView>
     </KeyboardAvoidingView>

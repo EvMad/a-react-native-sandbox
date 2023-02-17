@@ -18,6 +18,9 @@ const WelcomeScreen = ({navigation}) => {
        <Pressable onPress={() => navigation.navigate("Menu")}>
         <Text style={styles.buttonText}>View Menu</Text>
         </Pressable>
+        <Pressable onPress={() => navigation.navigate("Login")}>
+        <Text style={styles.buttonText}>Login</Text>
+        </Pressable>
         </ScrollView>
     );
   }

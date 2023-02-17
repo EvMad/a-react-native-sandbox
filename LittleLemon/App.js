@@ -26,7 +26,7 @@ export default function App() {
     <>
   <NavigationContainer>
      <LittleLemonHeader />
- <Stack.Navigator initialRouteName="Welcome" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold', }, }}>
+ <Stack.Navigator initialRouteName="Home" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold', }, }}>
  {/* <View style={styles.container}> */}
      
       <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ title: 'Home', headerTitle: (props) => <LogoTitle {...props} />,}} />
