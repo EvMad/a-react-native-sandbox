@@ -15,7 +15,7 @@ export default function App() {
   return (
     <>
   <NavigationContainer>
- <Stack.Navigator initialRouteName="Welcome">
+ <Stack.Navigator initialRouteName="Welcome" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' } }}>
  <View style={styles.container}>
       <LittleLemonHeader />
       <Stack.Screen name="Welcome" options={{ title: 'Home' }} component={WelcomeScreen} />
