@@ -9,6 +9,8 @@ import FeedbackForm from "./components/FeedbackForm";
 import WelcomeScreen from "./pages/WelcomeScreen";
 import LoginScreen from "./pages/LoginScreen";
 
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
     <>
