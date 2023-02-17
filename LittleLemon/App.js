@@ -11,7 +11,8 @@ import LoginScreen from "./pages/LoginScreen";
 export default function App() {
   return (
     <>
-    <View style={styles.container}>
+  <NavigationContainer>
+  <View style={styles.container}>
       <LittleLemonHeader />
       <WelcomeScreen />
       {/* <MenuItems /> */}
@@ -23,6 +24,7 @@ export default function App() {
     <View style={styles.footer}>
      <LittleLemonFooter />
    </View>
+  </NavigationContainer>
     </>
   );
 }
