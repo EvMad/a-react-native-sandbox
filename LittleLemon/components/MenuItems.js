@@ -144,7 +144,7 @@ export default MenuItems;
 
 const menuStyles = StyleSheet.create({
     container: {
-        flex: 0.75,
+        flex: 1,
         backgroundColor: '#333333',
     },
     innerContainer: {
