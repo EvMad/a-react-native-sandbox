@@ -15,9 +15,10 @@ export default function App() {
   return (
     <>
   <NavigationContainer>
+     <LittleLemonHeader />
  <Stack.Navigator initialRouteName="Welcome" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' } }}>
  {/* <View style={styles.container}> */}
-      {/* <LittleLemonHeader /> */}
+     
       <Stack.Screen name="Welcome" options={{ title: 'Home' }} component={WelcomeScreen} />
       <Stack.Screen name="Menu" component={MenuItems} />
       <Stack.Screen name="Feedback" component={FeedbackForm} />
@@ -30,6 +31,7 @@ export default function App() {
      {/* <LittleLemonFooter /> */}
    {/* </View> */}
  </Stack.Navigator>
+ <LittleLemonFooter />
   </NavigationContainer>
     </>
   );
