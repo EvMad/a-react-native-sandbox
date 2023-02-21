@@ -9,7 +9,7 @@ import MenuItems from "./components/MenuItems";
 import FeedbackForm from "./components/FeedbackForm";
 import WelcomeScreen from "./pages/WelcomeScreen";
 import LoginScreen from "./pages/LoginScreen";
-import { Iconicons } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -39,6 +39,7 @@ export default function App() {
     } else if (route.name === 'Menu') {
       iconName = 'ios-list';
     }
+    return <Ionicons name={iconName} size={size} color={color} />;
   },
 })}>
   <Tab.Screen name="Welcome" component={WelcomeScreen} />
