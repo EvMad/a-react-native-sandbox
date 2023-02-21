@@ -14,6 +14,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
+const Drawer = createDrawerNavigator();
 
 function LogoTitle() {
   return <Image source={require('./img/LittleLemonLogo.png')} style={{
