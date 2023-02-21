@@ -41,7 +41,9 @@ export default function App() {
     }
     return <Ionicons name={iconName} size={size} color={color} />;
   },
-})}>
+  tabBarActiveTintColor: 'tomato',
+  tabBarInactiveTintColor: 'gray',
+  })}>
   <Tab.Screen name="Welcome" component={WelcomeScreen} />
   <Tab.Screen name="Menu" component={MenuItems} />
 </Tab.Navigator>
