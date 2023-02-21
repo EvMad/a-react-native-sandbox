@@ -9,6 +9,7 @@ import MenuItems from "./components/MenuItems";
 import FeedbackForm from "./components/FeedbackForm";
 import WelcomeScreen from "./pages/WelcomeScreen";
 import LoginScreen from "./pages/LoginScreen";
+import { Iconicons } from '@expo/vector-icons';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
