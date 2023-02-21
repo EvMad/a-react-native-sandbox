@@ -33,7 +33,7 @@ export default function App() {
      <LittleLemonHeader />
 
 
-     <Drawer.Navigator useLegacyImplementation screenOptions={{ drawerPosition: "right" }}>
+     <Drawer.Navigator useLegacyImplementation initialRouteName='Welcome' screenOptions={{ drawerPosition: "right" }}>
       <Drawer.Screen name="Welcome" component={WelcomeScreen} />
       <Drawer.Screen name="Menu" component={MenuItems} />
      </Drawer.Navigator>
