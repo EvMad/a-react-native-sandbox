@@ -30,7 +30,17 @@ export default function App() {
   <NavigationContainer>
      <LittleLemonHeader />
 
-<Tab.Navigator>
+<Tab.Navigator screenOptions={({ route }) => ({
+  
+  tabBarIcon: ({ focused, color, size }) => {
+    let iconName;
+    if (route.name === 'Welcome') {
+      iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline'
+    } else if (route.name === 'Menu') {
+      iconName = 'ios-list';
+    }
+  },
+})}>
   <Tab.Screen name="Welcome" component={WelcomeScreen} />
   <Tab.Screen name="Menu" component={MenuItems} />
 </Tab.Navigator>
