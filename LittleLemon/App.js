@@ -38,6 +38,8 @@ export default function App() {
       iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline'
     } else if (route.name === 'Menu') {
       iconName = 'ios-list';
+    } else if (route.name === 'Login') {
+      iconName = 'ios-log-in-outline';
     }
     return <Ionicons name={iconName} size={size} color={color} />;
   },
@@ -46,6 +48,7 @@ export default function App() {
   })}>
   <Tab.Screen name="Welcome" component={WelcomeScreen} />
   <Tab.Screen name="Menu" component={MenuItems} />
+  <Tab.Screen name="Login" component={LoginScreen} />
 </Tab.Navigator>
 
 
