@@ -32,7 +32,13 @@ export default function App() {
   <NavigationContainer>
      <LittleLemonHeader />
 
-<Tab.Navigator screenOptions={({ route }) => ({
+
+     <Drawer.Navigator>
+      <Drawer.Screen name="Welcome" component={WelcomeScreen} />
+      <Drawer.Screen name="Menu" component={MenuItems} />
+     </Drawer.Navigator>
+
+{/* <Tab.Navigator screenOptions={({ route }) => ({
   
   tabBarIcon: ({ focused, color, size }) => {
     let iconName;
@@ -51,7 +57,7 @@ export default function App() {
   <Tab.Screen name="Welcome" component={WelcomeScreen} />
   <Tab.Screen name="Menu" component={MenuItems} />
   <Tab.Screen name="Login" component={LoginScreen} />
-</Tab.Navigator>
+</Tab.Navigator> */}
 
 
  {/* <Stack.Navigator initialRouteName="Home" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold', }, }}> */}
