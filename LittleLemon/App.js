@@ -28,6 +28,13 @@ export default function App() {
     <>
   <NavigationContainer>
      <LittleLemonHeader />
+
+<Tab.Navigator>
+  <Tab.Screen name="Welcome" component={WelcomeScreen} />
+  <Tab.Screen name="Menu" component={MenuItems} />
+</Tab.Navigator>
+
+
  {/* <Stack.Navigator initialRouteName="Home" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold', }, }}> */}
  {/* <View style={styles.container}> */}
      
