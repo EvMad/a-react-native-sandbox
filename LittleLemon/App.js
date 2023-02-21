@@ -33,7 +33,7 @@ export default function App() {
      <LittleLemonHeader />
 
 
-     <Drawer.Navigator>
+     <Drawer.Navigator useLegacyImplementation>
       <Drawer.Screen name="Welcome" component={WelcomeScreen} />
       <Drawer.Screen name="Menu" component={MenuItems} />
      </Drawer.Navigator>
