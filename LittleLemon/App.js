@@ -11,6 +11,7 @@ import WelcomeScreen from "./pages/WelcomeScreen";
 import LoginScreen from "./pages/LoginScreen";
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 function LogoTitle() {
   return <Image source={require('./img/LittleLemonLogo.png')} style={{
