@@ -28,13 +28,13 @@ export default function App() {
     <>
   <NavigationContainer>
      <LittleLemonHeader />
- <Stack.Navigator initialRouteName="Home" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold', }, }}>
+ {/* <Stack.Navigator initialRouteName="Home" screenOptions={{ headerStyle: { backgroundColor: '#FBDABB' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold', }, }}> */}
  {/* <View style={styles.container}> */}
      
-      <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ title: 'Home', headerTitle: (props) => <LogoTitle {...props} />,}} />
+      {/* <Stack.Screen name="Welcome" component={WelcomeScreen} options={{ title: 'Home', headerTitle: (props) => <LogoTitle {...props} />,}} />
       <Stack.Screen name="Menu" component={MenuItems} />
       <Stack.Screen name="Feedback" component={FeedbackForm} />
-      <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Login" component={LoginScreen} /> */}
       
       
     {/* </View> */}
@@ -42,7 +42,7 @@ export default function App() {
     {/* <View style={styles.footer}> */}
      {/* <LittleLemonFooter /> */}
    {/* </View> */}
- </Stack.Navigator>
+ {/* </Stack.Navigator> */}
  <LittleLemonFooter />
   </NavigationContainer>
     </>
